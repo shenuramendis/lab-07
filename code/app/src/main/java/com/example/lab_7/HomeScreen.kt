@@ -38,5 +38,14 @@ fun HomeScreen(navController: NavController) {
         ) {
             Text("Upcoming Races")
         }
+
+        Button(
+            onClick = {
+                navController.navigate("drivers")
+            },
+            modifier = Modifier.testTag("driverButton") // for testing
+        ) {
+            Text("Drivers")
+        }
     }
 }
